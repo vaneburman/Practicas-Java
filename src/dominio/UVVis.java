@@ -3,16 +3,18 @@ package dominio;
 import java.util.Scanner;
 
 public class UVVis extends Detectores{
-    int maxLongitud;
-    int minLongitud;
-    int longitudDeOnda;
+    //atributos del detector UV-Visible
+   protected int maxLongitud;
+   protected int minLongitud;
+   protected int longitudDeOnda;
 
+    //Constructor con las características que necesita
     public UVVis(int minLongitud, int maxLongitud) {
         this.maxLongitud = maxLongitud;
         this.minLongitud = minLongitud;
     }
 
-
+    //setteo de atributos
     public int getMaxLongitud() {
         return maxLongitud;
     }
@@ -29,6 +31,7 @@ public class UVVis extends Detectores{
         this.longitudDeOnda = longitudDeOnda;
     }
 
+    //método detectar para el UV-Visible
     @Override
     public void detectar() {
         while(longitudDeOnda < minLongitud || longitudDeOnda > maxLongitud){

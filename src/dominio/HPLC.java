@@ -11,6 +11,7 @@ public class HPLC extends Cromatografos{
         this.selectividad = selectividad;
     }
 
+    //métodos con implementación específica de HPLC
     @Override
     public void separarComponentes() {
         System.out.println("Separación cromatográfica con fase móvil líquida...");

@@ -1,15 +1,17 @@
 package dominio;
 
 public class MS extends Detectores{
+    //atributos de los detectores espectrómetros de masas
     String fuenteIonizacion;
     String analizador;
 
-
+    //constructor del detector de masas
     public MS(String fuenteIonizacion, String analizador) {
         this.fuenteIonizacion = fuenteIonizacion;
         this.analizador = analizador;
     }
 
+    //método detectar para el tipo de detector espectrómetro de masas
     @Override
     public void detectar() {
         switch(analizador){
